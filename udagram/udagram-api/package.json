@@ -23,7 +23,7 @@
     "test": ""
   },
   "keywords": [],
-  "author": "Gabriel Ruttner",
+  "author": "Ahmed Dadousha",
   "license": "ISC",
   "dependencies": {
     "@types/bcryptjs": "2.4.2",
