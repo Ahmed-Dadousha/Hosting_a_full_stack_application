@@ -19,7 +19,9 @@ jobs:
       - run:
           name: Install Front-End Dependencies
           command: |
+            npm run ts
             npm run frontend:install
+            npm run ts
       # TODO: Install dependencies in the the backend API
       - run:
           name: Install API Dependencies
