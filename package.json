@@ -12,6 +12,6 @@
 		"api:start": "cd udagram/udagram-api && npm run dev",
 		"api:deploy": "cd udagram/udagram-api && npm run deploy",
 		"deploy": "npm run api:deploy && npm run frontend:deploy",
-		"ts": "npm i -D typescript@3.5.0"
+		"ts": "npm i -D typescript@3.5.1 -f"
 	}
 }
