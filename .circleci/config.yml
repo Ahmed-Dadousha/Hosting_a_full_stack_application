@@ -46,15 +46,15 @@ jobs:
           command: |
             npm run frontend:deploy
 
-# workflows:
-#   build-and-deploy:
-#     jobs:
-#       - build-and-deploy:
-#           context: aws
-#           filters:
-#             branches:
-#               only:
-#                 - master
+workflows:
+  build-and-deploy:
+    jobs:
+      - build-and-deploy:
+          context: aws
+          filters:
+            branches:
+              only:
+                - master
 # workflows:
 #   udagram:
 #     jobs:
