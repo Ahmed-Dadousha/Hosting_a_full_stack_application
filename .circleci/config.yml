@@ -44,19 +44,30 @@ jobs:
       - run:
           name: deploy frontend
           command: |
+            npm i Typescript@3.4.0 
             npm run frontend:deploy
-workflows:
-  udagram:
-    jobs:
-      - build
-      - hold:
-          filters:
-            branches:
-              only:
-                - master
-          type: approval
-          requires:
-            - build
-      - deploy:
-          requires:
-            - hold
+
+# workflows:
+#   build-and-deploy:
+#     jobs:
+#       - build-and-deploy:
+#           context: aws
+#           filters:
+#             branches:
+#               only:
+#                 - master
+# workflows:
+#   udagram:
+#     jobs:
+#       - build
+#       - hold:
+#           filters:
+#             branches:
+#               only:
+#                 - master
+#           type: approval
+#           requires:
+#             - build
+#       - deploy:
+#           requires:
+#             - hold
