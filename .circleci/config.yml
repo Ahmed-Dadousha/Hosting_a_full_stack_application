@@ -42,7 +42,7 @@ jobs:
             npm run api:deploy
       # TODO: deploy the frontend
       - run:
-          name: deploy fronend
+          name: deploy frontend
           command: |
             npm run frontend:deploy
 workflows:
